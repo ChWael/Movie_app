@@ -1,3 +1,9 @@
+import React from "react";
+import { Link } from "react-router-dom";
+import Movie from "./Movie";
+
+
+
 function Card({ show }) {
   const rate = [];
   const rest = [];
@@ -6,7 +12,7 @@ function Card({ show }) {
 
   return (
     <div className="show-card">
-      <img className="Pic" src={show.img} alt="Show" />
+      <Link to = { `/Overview/${show.id}` } key = {show.id} > <img className="Pic" src = {show.img} alt="Show" /> </Link>
       <div className="show-info">
         <h5> {show.title} </h5>
         {rate

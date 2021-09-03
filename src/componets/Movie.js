@@ -1,6 +1,7 @@
 import React from "react";
 import Card from "./Card";
 
+
 const Movie = ({ movie, search, rating }) => {
   return (
     <div className="Movie">

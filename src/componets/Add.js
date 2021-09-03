@@ -78,13 +78,13 @@ function Add({ addMovieHandler }) {
         <div className = 'add-Movie-info'>
         <button onClick={closeModal}>close</button>
         <form>
-          <h5 style = {{display: 'flex', justifyContent: 'center'}}>Title</h5>
+          <h5>Title</h5>
           <input type = 'text' placeholder = 'Movie Name' onChange = {addTitle} />
-          <h5 style = {{display: 'flex', justifyContent: 'center'}}>Poster Link</h5>
+          <h5>Poster Link</h5>
           <input type = 'text' placeholder = 'Image Link' onChange = {addImg} />
-          <h5 style = {{display: 'flex', justifyContent: 'center'}}>Description</h5>
+          <h5>Description</h5>
           <input type = 'text' placeholder = 'Movie Story' onChange = {addDescription} />
-          <h5 style = {{display: 'flex', justifyContent: 'center'}}>Rating</h5>
+          <h5>Rating</h5>
           <input type = 'number' placeholder = 'Rate This Movie' onChange = {addRate} />
         </form>
         <button style = {{marginTop:'1cm'}} onClick = {input}> Add </button>
