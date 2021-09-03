@@ -3,8 +3,7 @@ import React, {useState} from "react";
 import Movie from './componets/Movie';
 import Add from './componets/Add';
 import NavBar from "./componets/NavBar";
-import Overview from "./componets/Overview";
-import { BrowserRouter as Router, Switch, Route  } from 'react-router-dom';
+
 
 
 
@@ -58,19 +57,14 @@ const addMovieHandler = (newMovie) => {
 const [search, setSearch] = useState("");
 const [rating, setRating] = useState("");
   return (
-    <Router>
-      <Switch>
+
         <div>
           <NavBar search = {search} setSearch = {setSearch} setRating = {setRating} />
           <Movie movie = {movie} search = {search} rating = {rating}  />
           <Add addMovieHandler = {addMovieHandler} />
-          <Route
-            path='/Overview/:Id'> 
-              <Overview movie={movie}/>
-            </Route>
+
         </div>
-      </Switch>
-    </Router>
+
   )
 }
 

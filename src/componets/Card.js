@@ -12,7 +12,7 @@ function Card({ show }) {
 
   return (
     <div className="show-card">
-      <Link to = { `/Overview/${show.id}` } key = {show.id} > <img className="Pic" src = {show.img} alt="Show" /> </Link>
+       <img className="Pic" src = {show.img} alt="Show" />
       <div className="show-info">
         <h5> {show.title} </h5>
         {rate
